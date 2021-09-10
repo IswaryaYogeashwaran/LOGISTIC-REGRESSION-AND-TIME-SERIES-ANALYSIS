@@ -11,7 +11,8 @@ A time series data set is a range of multiple values that an attribute fluctuate
 forecasted by the overseas trips by the non-residents to Ireland from the period of 2012 of quarter 1 to 2019 of quarter 4. “The overseastrips” is a quarterly time-period dataset. This dataset consists of two columns such as “year” 
 and “Trips.Thousands”, which has 32 observations. “The new home registration” prediction will be forecasted by the registration from the year 1978 tothe year 2019. “The new home registration” is an annual time-period dataset. This dataset contains only two columns namely“i.year” and “new home registration”, that has 42 rows.
 
-COMPONENTS OF RAW TIME SERIES
+COMPONENTS OF RAW TIME SERIES:
+
 The components of a raw time series are the numerous rationale that affect the values of an assessment in a time series. The components are of four types:   
 1. Trend 
 2. Seasonal Changes 

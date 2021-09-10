@@ -1,30 +1,83 @@
-# LOGISTIC REGRESSION AND TIME SERIES ANALYSIS
+# LOGISTIC REGRESSION AND TIME SERIES ANALYSIS STATISTICS
 
-[![N|Solid](https://miro.medium.com/max/3000/1*kptV21R6IRbNoabMkX-57A.png)](https://nodesource.com/products/nsolid)
+This project is to evaluate and analyze the time series and logistic regression. The time series analysis has estimatedby using two datasets for getting best fit model 
+among the three different appropriately used models. The logistic regression is performed in the dataset given to estimate the most significant predictor variable and independent variables by using relevant dimensional reduction methodology. The reasons for selectingbest fit models are explained clearly.
 
-> This research explains the implementation of machine learning algorithms such as the logistic regression model and few time series models. The binary logistic regression model is implemented to solve the binary classification problems that are problems with two class values. All the assumptions are verified after the model is built and the performance of thelogistic regression model is analyzed. Numerous time series analysis models are used to try to explain certain time series, which are often used to either understand the underlying meaning of the data points and to make predictions. The data is analyzed on different parameters to fit the best time series model. Every model is compared using different evaluation techniques and the best performing model is identified and explained. In this paper time series modelssuch as ARIMA, AUTO ARIMA, NAIVE MODEL. SEASONAL NAÏVE MODEL, ETS.
+## TIME SERIES ANALYSIS
+A time series data set is a range of multiple values that an attribute fluctuates over time. Time series analysis is the method for dealing with time series data and evaluating the insights. This method utilizes seasonality, trend, and patterns of time series data, which aids in forecasting future events. 
+ ![N|Solid](https://miro.medium.com/max/1280/0*AN8suioCkeRkugES.gif)
+ 
+ DATA DICTIONARY: The dataset used in this time series analysis are “The overseas trips” and “The new home registration”. “The overseas trips” prediction will be
+forecasted by the overseas trips by the non-residents to Ireland from the period of 2012 of quarter 1 to 2019 of quarter 4. “The overseastrips” is a quarterly time-period dataset. This dataset consists of two columns such as “year” 
+and “Trips.Thousands”, which has 32 observations. “The new home registration” prediction will be forecasted by the registration from the year 1978 tothe year 2019. “The new home registration” is an annual time-period dataset. This dataset contains only two columns namely“i.year” and “new home registration”, that has 42 rows.
 
-## DATA DESCRIPTION
-TIME SERIES ANALYSIS
-1) DATA DICTIONARY: The dataset used in this time series analysis are “The overseas trips” and “The new home registration”. “The overseas trips” prediction will be forecasted by the overseas trips by the non-residents to Ireland from the period of 2012 of quarter 1 to 2019 of quarter 4. “The overseas trips” is a quarterly time-period dataset. This dataset consists of two columns such as “year” and “Trips.Thousands”, which has 32 observations. “The new home registration” prediction will be forecasted by the registration from the year 1978 to the year 2019. “The new home registration” is an annual time- period dataset. This dataset contains only two columns namely “i.year” and “new home registration”, that has 42 rows.
-- “OverseasTrips’ is a quarterly time series of overseas trips to Ireland by non-residents from Q1, 2012 to Q4, 2019.
-- ‘NewHouseRegistrations’ is an annual series of new house registrations from 1978 to 2019.
+COMPONENTS OF RAW TIME SERIES
+The components of a raw time series are the numerous rationale that affect the values of an assessment in a time series. The components are of four types:   
+1. Trend 
+2. Seasonal Changes 
+3. Cyclic Changes                                              
+4. Unpredictable or irregular movement 
 
-LOGISTIC REGRESSION
-1) DATA DICTIONARY: The file ‘Childbirths’ contains data on childbirths in a US city. The dataset provided has contains 17 columns and rows.
+Seasonal and cyclical variations are changes that occur on a regular basis or are short-term changes. This is observed that this time series values have trend and seasonality. The Linear trend is present in this time series, which is justified by plotting abline function, which is seen in the figure-3. The abline function is plotting mean to the data.The seasonality is checkedby using seasonal plot which is visualized by the help of ggplot package in the figure-4. The level of the time series is given in the figure-5. The lines represent the mean of each quarter period. In the figure-6,the autoplot is a function that provides better default graphics for various data objects.
 
-## OUTCOMES
+![N|Solid](https://github.com/IswaryaYogeashwaran/LOGISTIC-REGRESSION-AND-TIME-SERIES-ANALYSIS/blob/main/statsPicture2.png?raw=true)
 
-- An assessment of the components of the raw time series is performed. 
-- Fitted a minimum of three candidate time series models such as  simple models, exponential smoothing models and non-seasonal and/or seasonal ARIMA models.
-- Performed and explained the appropriate diagnostic tests
-- Forecasted each series for three periods ahead with appropriate prediction intervals and illustrated graphically and provided assessment of the adequacy of the chosen model.
+![N|Solid](https://github.com/IswaryaYogeashwaran/LOGISTIC-REGRESSION-AND-TIME-SERIES-ANALYSIS/blob/main/StatsPicture1.png?raw=true)
+ 
+ In this time series, the four models used to evaluate are seasonal naive, Holt winters seasonal method, ETS function model and Arima model. The plot for seasonal naive. Box-Luang test is used to check the auto correlation of residuals or white noise present in the data. It gives significantly the model does not have lack of fit.
+ 
+ ![N|Solid](https://github.com/IswaryaYogeashwaran/LOGISTIC-REGRESSION-AND-TIME-SERIES-ANALYSIS/blob/main/StatsPicture3.png?raw=true)
+
+## LOGISTIC REGRESSION
+The statistical methodology of logistic regression is used to predict the result of the response variable (binary variable).For logistic regression, the independent variables can be continuous or categorical, but the response variable must be
+dichotomous or nominal or ordinal. 
+![N|Solid](https://miro.medium.com/max/986/1*rmXSVr7NopG_hFH0XZsEPA.png)
 
 
-## Explanatory analysis 
-##### GLIMPS OF EXPLANATORY ANALYSIS
-[![N|Solid](https://github.com/IswaryaYogeashwaran/LOGISTIC-REGRESSION-AND-TIME-SERIES-ANALYSIS/blob/main/stats.png?raw=true)](https://nodesource.com/products/nsolid)
+
+ANALYSIS PROCEDURE:
+ Import the Data in SPSS.
+Navigate to Analyze¡- Regression ¡- Binary
+LogisticRegression.
+ Drag and drop the variable “low birth weight” in 
+targetvariable box.
+ Drag and drop the other relevant variables in the
+independent variable box.
+ Click KMO and Bartlett’s test in Descriptive
+statisticsoption.
+ Click Fixed 2 in the extraction option
+
+Hosmer and Lemeshow Test showed chi-square value of 0.5446, which means the predictor variable is significant. From the above results, the model for predicting the lower birth weight of the child has proved to be classified as 88.1%.
+
+The logistic regression for predicting the low birth weight of the child has proved that the model is fitted with accuracy 88.1%. The predictor variable is significant variable to predict. In the time series, “Overseas Trips” dataset has the best fit model as ETS function of Simple Exponential Smoothing with RMSE value of 54. In “new home registration” dataset, Arima model is the best fitted model with high accuracy (RMSE value of 6342.208). This concludes that these two models forecasted the next three periods efficiently.
 
 
-## TOOLS USED
-- R - RStudio
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+   

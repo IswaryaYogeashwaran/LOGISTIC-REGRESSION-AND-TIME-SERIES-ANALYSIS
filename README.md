@@ -1,4 +1,4 @@
-# LOGISTIC REGRESSION AND TIME SERIES ANALYSIS STATISTICS
+# LOGISTIC REGRESSION AND TIME SERIES ANALYSIS 
 
 This project is to evaluate and analyze the time series and logistic regression. The time series analysis has estimatedby using two datasets for getting best fit model 
 among the three different appropriately used models. The logistic regression is performed in the dataset given to estimate the most significant predictor variable and independent variables by using relevant dimensional reduction methodology. The reasons for selectingbest fit models are explained clearly.

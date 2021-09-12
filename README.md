@@ -39,11 +39,16 @@ dichotomous or nominal or ordinal.
 ANALYSIS PROCEDURE:
 
  Import the Data in SPSS.
+
 Navigate to Analyze -> Regression-> Binary LogisticRegression.
+
  Drag and drop the variable “low birth weight” in targetvariable box.
+
  Drag and drop the other relevant variables in the independent variable box.
+
  Click KMO and Bartlett’s test in Descriptive statistics option.
- Click Fixed 2 in the extraction option
+
+ Click Fixed 2 in the extraction option.
 
 Hosmer and Lemeshow Test showed chi-square value of 0.5446, which means the predictor variable is significant. From the above results, the model for predicting the lower birth weight of the child has proved to be classified as 88.1%.
 
